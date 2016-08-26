@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/video_thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        />
+    <ImageView
+        android:id="@+id/video_playButton"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/playbutton"
+        />
+    <TextView android:id="@+id/video_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/video_thumbnail"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        />
+
+    <TextView android:id="@+id/video_uploadedBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/video_title"
+        android:textSize="15sp"
+        android:padding="10dp"
+        />
+    <TextView android:id="@+id/textView_views"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/video_uploadedBy"
+        android:textSize="15sp"
+        android:text="Views : "
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        />
+    <TextView android:id="@+id/video_views"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/video_uploadedBy"
+        android:layout_toRightOf="@+id/textView_views"
+        android:textSize="15sp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp" />
+    <TextView android:id="@+id/textView_Likes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/video_views"
+        android:textSize="15sp"
+        android:text="Likes : "
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        />
+    <TextView android:id="@+id/video_likes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/video_views"
+        android:textSize="15sp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:layout_toRightOf="@+id/textView_Likes"
+        />
+
+    <TextView android:id="@+id/textView_Category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/video_likes"
+        android:textSize="15sp"
+        android:text="Category : "
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        />
+    <TextView android:id="@+id/video_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/video_likes"
+        android:textSize="15sp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:layout_toRightOf="@+id/textView_Category"
+        />
+
+
+</RelativeLayout>
